@@ -21,32 +21,28 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 15px;
     transition: all .4s;
     color: white;
-
 }
 
 [class|="container"]>div:nth-child(2) {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     width: 100%;
+    padding: 5px;
 }
 
 [class|="container"]>div>p+div {
-    padding: 12px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: white;
-    font-weight: 500px;
-    color: black;
-}
-
-[class|="container"]>div>p {
-    font-size: 1.2rem;
     padding: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400px;
+    width: fit-content;
+    height: fit-content;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    color: black;
+    min-height: fit-content;
 }
 
 [class|="container"]:hover {
@@ -55,15 +51,26 @@ p {
 
 [class|="container"]>div:first-child {
     width: 100%;
+    font-size: 0.8rem;
 }
-[class|="container"]>div>p{
+
+[class|="container"]>div>p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:x-large;
-}
-[class|="container"]>div>div:last-child{
     font-size: 1.2rem;
-    opacity: 0.85;
+    padding: 5px;
+    display: flex;
+    align-items: end;
 }
+
+
+[class|="container"]>div>div:last-child {
+    font-size: 1rem;
+    opacity: 0.85;
+    padding: 5px;
+    display: flex;
+    align-items: end;
+}
+
 /* container-1 Starts */
 .container-1 {
     grid-column: 1/3;
@@ -72,7 +79,6 @@ p {
 
 .container-1>div>div:last-child {
     background-color: aquamarine;
-
 }
 
 /* container-1 Ends */
@@ -137,6 +143,7 @@ p {
 .container-6>div>div:last-child {
     background-color: lightpink;
 }
+
 /* container-6 Ends */
 
 /* container-7 Starts */
@@ -144,10 +151,12 @@ p {
     grid-column: 4/7;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-7.png);
 }
-.container-7>div>div:last-child{
+
+.container-7>div>div:last-child {
     background-color: lightseagreen;
 
 }
+
 /* container-7 Ends */
 
 /* container-8 Starts */
@@ -155,10 +164,12 @@ p {
     grid-column: 1/5;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-8.png);
 }
-.container-8>div>div:last-child{
+
+.container-8>div>div:last-child {
     background-color: lightcoral;
 
 }
+
 /* container-8 Ends */
 
 /* container-9 Starts */
@@ -166,10 +177,12 @@ p {
     grid-column: 5/7;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-13.png);
 }
-.container-9>div>div:last-child{
+
+.container-9>div>div:last-child {
     background-color: lightyellow;
 
 }
+
 /* container-9 Ends */
 
 /* container-10 Starts */
@@ -177,8 +190,9 @@ p {
     grid-column: 1/4;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-14.png);
 }
-.container-10>div>div:last-child{
-    background-color:darkcyan;
+
+.container-10>div>div:last-child {
+    background-color: darkcyan;
 }
 
 /* container-10 Ends */
@@ -188,10 +202,12 @@ p {
     grid-column: 4/7;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-15.jpg);
 }
-.container-11>div>div:last-child{
-    background-color:rgb(173, 211, 108);
+
+.container-11>div>div:last-child {
+    background-color: rgb(173, 211, 108);
 
 }
+
 /* container-11 Ends */
 
 /* container-12 Starts */
@@ -199,7 +215,8 @@ p {
     grid-column: 1/5;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-16.jpg);
 }
-.container-12>div>div:last-child{
+
+.container-12>div>div:last-child {
     background-color: darkkhaki;
 }
 
@@ -210,7 +227,8 @@ p {
     grid-column: 5/7;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-17.jpg);
 }
-.container-13>div>div:last-child{
+
+.container-13>div>div:last-child {
     background-color: darkorchid;
 
 }
@@ -223,10 +241,11 @@ p {
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-18.jpg);
 }
 
-.container-14>div>div:last-child{
+.container-14>div>div:last-child {
     background-color: chartreuse;
 
 }
+
 /* container-14 Ends */
 
 /* container-15 Starts */
@@ -234,10 +253,12 @@ p {
     grid-column: 3/5;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-19.png);
 }
-.container-15>div>div:last-child{
+
+.container-15>div>div:last-child {
     background-color: darkgoldenrod;
 
 }
+
 /* container-15 Ends */
 
 /* container-16 Starts */
@@ -245,8 +266,10 @@ p {
     grid-column: 5/7;
     background-image: linear-gradient(225deg, rgba(26, 42, 78, 0) 0, rgba(26, 42, 78, .9) 65.07%), url(https://prium.github.io/grid/assets/img/group/pic-20.png);
 }
-.container-16>div>div:last-child{
+
+.container-16>div>div:last-child {
     background-color: rgba(98, 161, 161, 0.767);
 
 }
+
 /* container-16 Ends */

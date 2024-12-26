@@ -11,10 +11,7 @@ body {
     font-family: CircularStd, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: #fff;
 }
-header{
-    position: sticky;
-    top: 0;
-}
+
 .grid-container {
     height: 100%;
     width: 100%;
@@ -32,37 +29,37 @@ header{
 .blue-block {
     background-color: #315fe9;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    font-size: 1.5rem;
+    gap: 5px;
+    font-size: 1rem;
     color: white;
     cursor: pointer;
 }
 
 .icon {
     background-color: rgba(21, 71, 222, .95);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .white-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 10px;
     background-color: #f9f9f9;
 }
 
 .profile {
-    gap: 16px;
-    padding: 10px;
+    gap: 15px;
+    padding: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,9 +67,9 @@ header{
 }
 
 .profile>div {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -82,16 +79,19 @@ header{
     color: #506690;
     cursor: pointer;
     transition: all 0.4s ease;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+
 }
-.profile>i:hover{
+
+.profile>i:hover {
     color: blue;
 }
 
 
 .input {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 10px;
     position: relative;
@@ -107,9 +107,21 @@ header{
     width: fit-content;
     border-radius: 5px;
     width: 250px;
-    height: 50px;
+    height: 40px;
     text-indent: 25%;
     transition: all 0.4s ease;
+}
+
+#email {
+    position: relative;
+}
+
+.input>label>i {
+    position: absolute;
+    right: 44%;
+    top: 8px;
+    /* padding: 10px; */
+    color: lightgray;
 }
 
 .input>input:focus {
@@ -120,17 +132,11 @@ header{
     text-align: center;
     border: 2px solid;
     width: 200px;
-    padding: 10px;
+    height: fit-content;
+    padding: 8px;
     border-radius: 5px;
     color: #315fe9;
     cursor: pointer;
-}
-
-.input>i {
-    position: absolute;
-    left: 10px;
-    padding: 10px;
-    color: lightgray;
 }
 
 input::placeholder {
@@ -144,6 +150,34 @@ input::placeholder {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.input>div:hover{
+
+.input>div:hover {
     background-color: rgba(231, 230, 230, 0.845);
 }
+
+.bi-list {
+    display: none;
+    font-size: 50px;
+}
+
+#checkbox {
+    display: none;
+}
+
+/* .bi-list {
+    display: none;
+    font-size: 45px;
+    color: rgba(138, 127, 127, 0.89);
+}
+
+.profile {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.aside {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.input {
+    grid-area: 3 / 1 / 4 / 2;
+} */
