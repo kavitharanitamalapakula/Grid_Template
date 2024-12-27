@@ -31,13 +31,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     cursor: pointer;
 }
 
-.icon {
+.icon-1 {
     background-color: rgba(21, 71, 222, .95);
     width: 40px;
     height: 40px;
@@ -164,20 +163,89 @@ input::placeholder {
     display: none;
 }
 
-/* .bi-list {
+.hidden {
     display: none;
-    font-size: 45px;
-    color: rgba(138, 127, 127, 0.89);
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+    padding: 10px 30px;
+    gap: 10px;
+    transition: all 0.4s ease;
 }
 
-.profile {
-    grid-area: 1 / 1 / 2 / 2;
+.hidden1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    font-size: 1.2rem;
 }
 
-.aside {
-    grid-area: 2 / 1 / 3 / 2;
+.picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTACPySOIxwMND-i-yez3OR8EcLmRpo15Dn5g&s);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.input {
-    grid-area: 3 / 1 / 4 / 2;
-} */
+.hidden2 {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 20%;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.hidden2>div {
+    background-color: #f9fbfd;
+
+    min-width: 20%;
+    border-radius: 10px;
+}
+
+.hidden3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.first>input {
+    padding: 8px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: 2px solid rgba(128, 128, 128, 0.785);
+}
+
+.Second {
+    text-align: center;
+    border: 2px solid;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    color: #315fe9;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.hidden3>.Second:hover {
+    background-color: rgba(231, 230, 230, 0.845);
+}
+
+.first>input:focus {
+    outline: 2px solid rgba(139, 164, 210, 0.842);
+}
